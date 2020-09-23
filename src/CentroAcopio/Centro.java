@@ -224,6 +224,11 @@ public static ImageIcon getIcono(int opcion) {
             personasmeter = personasmeter - 1;
         }
         txtmeter.setText(String.valueOf(personasmeter));
+        try {
+
+            Thread.sleep(50);
+        } catch (Exception e) {
+        }
     }
 
     public static void actualizarsacar(int accion) {
@@ -233,11 +238,21 @@ public static ImageIcon getIcono(int opcion) {
             personassacar = personassacar - 1;
         }
         txtretirar.setText(String.valueOf(personassacar));
+        try {
+
+            Thread.sleep(50);
+        } catch (Exception e) {
+        }
     }
 
     public static void actualizardespacho() {
         despachadas = despachadas + 1;
         txtdespachados.setText(String.valueOf(despachadas));
+        try {
+
+            Thread.sleep(50);
+        } catch (Exception e) {
+        }
     }
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTextField cantidadclientes;

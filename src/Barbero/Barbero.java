@@ -30,7 +30,7 @@ public class Barbero  implements Runnable {
             //viendo si hay alguien en la cola o el cliente llegue a la barberia
             try {
 
-                    Thread.sleep(500);
+                    Thread.sleep(50);
                 } catch (Exception e) {
                 }
             boolean result = lista.can_pop();
@@ -58,7 +58,7 @@ public class Barbero  implements Runnable {
             //cortando pelo
             try {
 
-                Thread.sleep(100);
+                Thread.sleep(50);
             } catch (Exception e) {
             }
             estado=false;

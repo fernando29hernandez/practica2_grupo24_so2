@@ -66,7 +66,7 @@ public class ListaSillas {
             }
             
             if (!empty()) {
-                System.out.println("2");
+                //System.out.println("2");
                 pop();
                 candado2.unlock();
                 return true;

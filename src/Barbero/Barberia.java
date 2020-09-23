@@ -165,16 +165,32 @@ public class Barberia extends javax.swing.JFrame {
             cola = cola - 1;
         }
         txtespera.setText(String.valueOf(cola));
+        try {
+
+            Thread.sleep(50);
+        } catch (Exception e) {
+        }
     }
 
     public static void actualizaratendidos() {
         atendidos = atendidos + 1;
         txtatendidas.setText(String.valueOf(atendidos));
+        try {
+
+            Thread.sleep(50);
+        } catch (Exception e) {
+        }
+
     }
 
     public static void actualizarretirados() {
         retirados = retirados + 1;
         txtretirados.setText(String.valueOf(retirados));
+        try {
+
+            Thread.sleep(50);
+        } catch (Exception e) {
+        }
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
