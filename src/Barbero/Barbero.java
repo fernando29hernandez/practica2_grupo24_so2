@@ -11,18 +11,19 @@ import java.awt.Color;
  *
  * @author Fernando
  */
-public class Barbero  implements Runnable {
+public class Barbero implements Runnable {
 
     public int accion;
     public boolean verificador;
     public Silla cuadricula[][];
     public ListaSillas lista;
     public boolean estado;
+
     public Barbero(Silla cuadricula[][], ListaSillas lista) {
         this.verificador = false;
         this.cuadricula = cuadricula;
         this.lista = lista;
-        this.estado=false;
+        this.estado = false;
     }
 
     public void hacer_accion() {
@@ -30,19 +31,24 @@ public class Barbero  implements Runnable {
             //viendo si hay alguien en la cola o el cliente llegue a la barberia
             try {
 
-                    Thread.sleep(50);
-                } catch (Exception e) {
-                }
+                Thread.sleep(50);
+            } catch (Exception e) {
+            }
             boolean result = lista.can_pop();
             if (result) {
                 Barberia.actualizarespera(1);
                 Barberia.barbero.setBackground(Color.GREEN);
-                
+
                 int cantidad = 0;
                 for (int i = 0; i < 10; i++) {
                     for (int j = 0; j < 2; j++) {
                         if (cantidad < lista.getTamano()) {
                             cuadricula[i][j].setBackground(Color.GREEN);
+                            try {
+
+                                Thread.sleep(15);
+                            } catch (Exception e) {
+                            }
                             //cuadricula[i][j].setIcon(Centro.getIcono(1));
                         } else {
                             cuadricula[i][j].setBackground(Color.black);
@@ -52,7 +58,7 @@ public class Barbero  implements Runnable {
 
                     }
                 }
-                estado=true;
+                estado = true;
             }
         } else {
             //cortando pelo
@@ -61,7 +67,7 @@ public class Barbero  implements Runnable {
                 Thread.sleep(50);
             } catch (Exception e) {
             }
-            estado=false;
+            estado = false;
             Barberia.actualizaratendidos();
             Barberia.barbero.setBackground(Color.BLUE);
         }
@@ -71,12 +77,13 @@ public class Barbero  implements Runnable {
     public void run() {
 
         while (!verificador) {
-            try {
 
-                    Thread.sleep(50);
-                } catch (Exception e) {
-                }
             hacer_accion();
+//            try {
+//
+//                Thread.sleep(50);
+//            } catch (Exception e) {
+//            }
         }
 
     }

@@ -37,12 +37,9 @@ public class ListaSillas {
         boolean resp = candado.tryLock();
         //System.out.println("vengo a insertar");
         if (resp) {
-            try {
-
-                Thread.sleep(50);
-            } catch (Exception e) {
-            }
+            
             if (!full()) {
+                
                 append("nuevo cliente");
                 candado.unlock();
             
@@ -61,7 +58,7 @@ public class ListaSillas {
         
             try {
 
-                Thread.sleep(50);
+                Thread.sleep(25);
             } catch (Exception e) {
             }
             
@@ -106,7 +103,7 @@ public class ListaSillas {
 
     public boolean full() {
 
-        if (tamano == 20) {
+        if (tamano >= 20) {
             return true;
         }
 

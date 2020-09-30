@@ -203,6 +203,7 @@ public static ImageIcon getIcono(int opcion) {
                 actualizarsacar(0);
 
             }
+            
             System.out.println("este cliente va a : " + (accion == 1 ? "sacar" : "meter"));
             ejecutorPersona.execute(new Persona(accion, cuadricula, lista));
             System.out.println("llega cliente");
@@ -224,11 +225,7 @@ public static ImageIcon getIcono(int opcion) {
             personasmeter = personasmeter - 1;
         }
         txtmeter.setText(String.valueOf(personasmeter));
-        try {
-
-            Thread.sleep(50);
-        } catch (Exception e) {
-        }
+       
     }
 
     public static void actualizarsacar(int accion) {
@@ -238,11 +235,7 @@ public static ImageIcon getIcono(int opcion) {
             personassacar = personassacar - 1;
         }
         txtretirar.setText(String.valueOf(personassacar));
-        try {
-
-            Thread.sleep(50);
-        } catch (Exception e) {
-        }
+        
     }
 
     public static void actualizardespacho() {

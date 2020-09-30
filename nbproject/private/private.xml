@@ -5,17 +5,22 @@
         <group>
             <file>file:/C:/Users/Fernando/Documents/NetBeansProjects/%5BSO2%5DPractica2_24/src/so2/practica2_24/SO2Practica2_24.java</file>
             <file>file:/C:/Users/Fernando/Documents/NetBeansProjects/%5BSO2%5DPractica2_24/src/CentroAcopio/ListaEspacios.java</file>
+            <file>file:/C:/Users/Fernando/Documents/NetBeansProjects/%5BSO2%5DPractica2_24/src/SpaceInvaders/Casilla.java</file>
             <file>file:/C:/Users/Fernando/Documents/NetBeansProjects/%5BSO2%5DPractica2_24/src/Barbero/Silla.java</file>
             <file>file:/C:/Users/Fernando/Documents/NetBeansProjects/%5BSO2%5DPractica2_24/src/Barbero/Barberia.java</file>
+            <file>file:/C:/Users/Fernando/Documents/NetBeansProjects/%5BSO2%5DPractica2_24/src/SpaceInvaders/CrearFilasEnemigas.java</file>
+            <file>file:/C:/Users/Fernando/Documents/NetBeansProjects/%5BSO2%5DPractica2_24/src/SpaceInvaders/TrayectoriaMisil.java</file>
             <file>file:/C:/Users/Fernando/Documents/NetBeansProjects/%5BSO2%5DPractica2_24/src/CentroAcopio/Persona.java</file>
             <file>file:/C:/Users/Fernando/Documents/NetBeansProjects/%5BSO2%5DPractica2_24/src/Barbero/Barbero.java</file>
             <file>file:/C:/Users/Fernando/Documents/NetBeansProjects/%5BSO2%5DPractica2_24/src/Barbero/LlegadaClientes.java</file>
             <file>file:/C:/Users/Fernando/Documents/NetBeansProjects/%5BSO2%5DPractica2_24/src/so2/practica2_24/Menu.java</file>
             <file>file:/C:/Users/Fernando/Documents/NetBeansProjects/%5BSO2%5DPractica2_24/src/SpaceInvaders/Tablero.java</file>
             <file>file:/C:/Users/Fernando/Documents/NetBeansProjects/%5BSO2%5DPractica2_24/src/Barbero/Cliente.java</file>
+            <file>file:/C:/Users/Fernando/Documents/NetBeansProjects/%5BSO2%5DPractica2_24/src/SpaceInvaders/TrayectoriaEnemigo.java</file>
             <file>file:/C:/Users/Fernando/Documents/NetBeansProjects/%5BSO2%5DPractica2_24/src/CentroAcopio/Centro.java</file>
             <file>file:/C:/Users/Fernando/Documents/NetBeansProjects/%5BSO2%5DPractica2_24/src/Barbero/ListaSillas.java</file>
             <file>file:/C:/Users/Fernando/Documents/NetBeansProjects/%5BSO2%5DPractica2_24/src/Barbero/NodoSilla.java</file>
+            <file>file:/C:/Users/Fernando/Documents/NetBeansProjects/%5BSO2%5DPractica2_24/src/SpaceInvaders/Nave.java</file>
         </group>
     </open-files>
 </project-private>

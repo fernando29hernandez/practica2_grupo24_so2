@@ -97,6 +97,11 @@ public class Persona implements Runnable {
 
         while (!verificador) {
             hacer_accion();
+             try {
+
+                Thread.sleep(50);
+            } catch (Exception e) {
+            }
         }
 
     }
